@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro y Validación de Usuarios</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="register-card">
+      <h1>Crear Cuenta</h1>
+      <p class="subtitle">Completa el formulario para registrarte</p>
+
+      <form id="register-form" novalidate>
+        <div class="form-group">
+          <label for="reg-name">Nombre completo</label>
+          <input type="text" id="reg-name" placeholder="Ej. Juan Pérez" autocomplete="name" />
+          <span class="error" id="reg-name-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email">Correo electrónico</label>
+          <input type="email" id="reg-email" placeholder="correo@ejemplo.com" autocomplete="email" />
+          <span class="error" id="reg-email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-password">Contraseña</label>
+          <div class="input-wrapper">
+            <input type="password" id="reg-password" placeholder="Mínimo 8 caracteres" autocomplete="new-password" />
+            <button type="button" class="toggle-pw" data-target="reg-password" aria-label="Mostrar contraseña">👁</button>
+          </div>
+          <span class="error" id="reg-password-error"></span>
+          <ul class="pw-rules" id="pw-rules">
+            <li id="rule-length">✗ Al menos 8 caracteres</li>
+            <li id="rule-upper">✗ Al menos una mayúscula</li>
+            <li id="rule-number">✗ Al menos un número</li>
+          </ul>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-confirm">Confirmar contraseña</label>
+          <div class="input-wrapper">
+            <input type="password" id="reg-confirm" placeholder="Repite tu contraseña" autocomplete="new-password" />
+            <button type="button" class="toggle-pw" data-target="reg-confirm" aria-label="Mostrar contraseña">👁</button>
+          </div>
+          <span class="error" id="reg-confirm-error"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+      </form>
+
+      <p class="switch-link">¿Ya tienes cuenta? <a href="#" id="go-login">Inicia sesión</a></p>
+    </div>
+
+    <div class="card hidden" id="login-card">
+      <h1>Iniciar Sesión</h1>
+      <p class="subtitle">Bienvenido de vuelta</p>
+
+      <form id="login-form" novalidate>
+        <div class="form-group">
+          <label for="log-email">Correo electrónico</label>
+          <input type="email" id="log-email" placeholder="correo@ejemplo.com" autocomplete="email" />
+          <span class="error" id="log-email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="log-password">Contraseña</label>
+          <div class="input-wrapper">
+            <input type="password" id="log-password" placeholder="Tu contraseña" autocomplete="current-password" />
+            <button type="button" class="toggle-pw" data-target="log-password" aria-label="Mostrar contraseña">👁</button>
+          </div>
+          <span class="error" id="log-password-error"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </form>
+
+      <p class="switch-link">¿No tienes cuenta? <a href="#" id="go-register">Regístrate</a></p>
+    </div>
+
+    <div class="card hidden" id="dashboard-card">
+      <div class="avatar" id="dash-avatar"></div>
+      <h1>¡Bienvenido!</h1>
+      <p class="username" id="dash-name"></p>
+      <p class="dash-email" id="dash-email"></p>
+      <button class="btn btn-outline" id="logout-btn">Cerrar sesión</button>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

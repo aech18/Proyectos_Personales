@@ -181,7 +181,7 @@
       const msg = encodeURIComponent(
         'Hola, quiero hacer el siguiente pedido en Estefana Bistro:\n\n' + lines.join('\n')
       );
-      cartWhatsappBtn.href = `https://wa.me/573001234567?text=${msg}`;
+      cartWhatsappBtn.href = `https://wa.me/584124328899?text=${msg}`;
     } else {
       cartWhatsappBtn.href = '#';
     }

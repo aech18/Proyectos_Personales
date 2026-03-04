@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
   <header class="navbar" id="navbar">
     <div class="navbar-inner">
       <a href="#home" class="logo">Estefana<span>Bistro</span></a>
@@ -28,7 +27,6 @@
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
   <section class="hero" id="home">
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -45,7 +43,6 @@
     </div>
   </section>
 
-  <!-- ===== BADGES ===== -->
   <section class="badges-bar">
     <div class="badge-item">
       <span class="badge-icon">🕐</span>
@@ -58,7 +55,7 @@
       <span class="badge-icon">📍</span>
       <div>
         <strong>Ubicación</strong>
-        <p>Calle del Hambre, Local #12‑30, Valencia, Carabobo, Venezuela</p>
+        <p>Calle del Hambre, Valencia, Carabobo</p>
       </div>
     </div>
     <div class="badge-item">
@@ -77,13 +74,11 @@
     </div>
   </section>
 
-  <!-- ===== MENU ===== -->
   <section class="section" id="menu">
     <div class="section-inner">
       <p class="section-label">Lo que tenemos para ti</p>
       <h2 class="section-title">Nuestro Menú</h2>
 
-      <!-- Category filter tabs -->
       <div class="menu-tabs" role="tablist">
         <button class="tab active" data-category="all" role="tab">Todo</button>
         <button class="tab" data-category="entradas" role="tab">Entradas</button>
@@ -92,21 +87,19 @@
         <button class="tab" data-category="bebidas" role="tab">Bebidas</button>
       </div>
 
-      <!-- Menu grid -->
       <div class="menu-grid" id="menu-grid">
 
-        <!-- Entradas -->
         <article class="menu-card" data-category="entradas">
           <div class="menu-card-img" style="background-image: url('https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=600&q=80')"></div>
           <div class="menu-card-body">
             <div class="menu-card-header">
               <h3>Bruschetta al Tomate</h3>
-              <span class="price">$14.900</span>
+              <span class="price">$8</span>
             </div>
             <p>Pan artesanal tostado con tomate cherry, albahaca fresca y aceite de oliva virgen</p>
             <div class="menu-card-footer">
               <span class="tag">Vegetariano</span>
-              <button class="btn-add" data-item="Bruschetta al Tomate" data-price="14900">+ Agregar</button>
+              <button class="btn-add" data-item="Bruschetta al Tomate" data-price="8">+ Agregar</button>
             </div>
           </div>
         </article>
@@ -116,12 +109,12 @@
           <div class="menu-card-body">
             <div class="menu-card-header">
               <h3>Sopa del Día</h3>
-              <span class="price">$12.500</span>
+              <span class="price">$6</span>
             </div>
             <p>Sopa casera preparada diariamente con ingredientes de temporada y hierbas frescas</p>
             <div class="menu-card-footer">
               <span class="tag">Casero</span>
-              <button class="btn-add" data-item="Sopa del Día" data-price="12500">+ Agregar</button>
+              <button class="btn-add" data-item="Sopa del Día" data-price="6">+ Agregar</button>
             </div>
           </div>
         </article>
@@ -131,28 +124,27 @@
           <div class="menu-card-body">
             <div class="menu-card-header">
               <h3>Tabla de Quesos</h3>
-              <span class="price">$28.000</span>
+              <span class="price">$18</span>
             </div>
             <p>Selección de quesos artesanales con mermelada de frutos rojos, nueces y galletas</p>
             <div class="menu-card-footer">
               <span class="tag">Para compartir</span>
-              <button class="btn-add" data-item="Tabla de Quesos" data-price="28000">+ Agregar</button>
+              <button class="btn-add" data-item="Tabla de Quesos" data-price="18">+ Agregar</button>
             </div>
           </div>
         </article>
 
-        <!-- Principales -->
         <article class="menu-card" data-category="principales">
           <div class="menu-card-img" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80')"></div>
           <div class="menu-card-body">
             <div class="menu-card-header">
               <h3>Lomo al Chimichurri</h3>
-              <span class="price">$48.000</span>
+              <span class="price">$22</span>
             </div>
             <p>Lomo de res a la parrilla con chimichurri casero, papas rústicas y ensalada verde</p>
             <div class="menu-card-footer">
               <span class="tag">⭐ Favorito</span>
-              <button class="btn-add" data-item="Lomo al Chimichurri" data-price="48000">+ Agregar</button>
+              <button class="btn-add" data-item="Lomo al Chimichurri" data-price="22">+ Agregar</button>
             </div>
           </div>
         </article>
@@ -162,12 +154,12 @@
           <div class="menu-card-body">
             <div class="menu-card-header">
               <h3>Salmón en Costra</h3>
-              <span class="price">$52.000</span>
+              <span class="price">$25</span>
             </div>
             <p>Filete de salmón en costra de hierbas con risotto de limón y espárragos al vapor</p>
             <div class="menu-card-footer">
               <span class="tag">Pescados</span>
-              <button class="btn-add" data-item="Salmón en Costra" data-price="52000">+ Agregar</button>
+              <button class="btn-add" data-item="Salmón en Costra" data-price="25">+ Agregar</button>
             </div>
           </div>
         </article>
@@ -177,12 +169,12 @@
           <div class="menu-card-body">
             <div class="menu-card-header">
               <h3>Pasta Trufa Negra</h3>
-              <span class="price">$38.000</span>
+              <span class="price">$16</span>
             </div>
             <p>Tagliatelle fresca con crema de trufa negra, parmesano y champiñones silvestres</p>
             <div class="menu-card-footer">
               <span class="tag">Vegetariano</span>
-              <button class="btn-add" data-item="Pasta Trufa Negra" data-price="38000">+ Agregar</button>
+              <button class="btn-add" data-item="Pasta Trufa Negra" data-price="16">+ Agregar</button>
             </div>
           </div>
         </article>
@@ -192,28 +184,27 @@
           <div class="menu-card-body">
             <div class="menu-card-header">
               <h3>Pollo al Limón</h3>
-              <span class="price">$34.000</span>
+              <span class="price">$15</span>
             </div>
             <p>Pechuga de pollo rellena con hierbas, salsa de limón y alcaparras, con puré de papa</p>
             <div class="menu-card-footer">
               <span class="tag">Popular</span>
-              <button class="btn-add" data-item="Pollo al Limón" data-price="34000">+ Agregar</button>
+              <button class="btn-add" data-item="Pollo al Limón" data-price="15">+ Agregar</button>
             </div>
           </div>
         </article>
 
-        <!-- Postres -->
         <article class="menu-card" data-category="postres">
           <div class="menu-card-img" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80')"></div>
           <div class="menu-card-body">
             <div class="menu-card-header">
               <h3>Tiramisú Clásico</h3>
-              <span class="price">$18.000</span>
+              <span class="price">$7</span>
             </div>
             <p>Tiramisú italiano con ladyfingers empapados en café espresso y crema mascarpone</p>
             <div class="menu-card-footer">
               <span class="tag">⭐ Favorito</span>
-              <button class="btn-add" data-item="Tiramisú Clásico" data-price="18000">+ Agregar</button>
+              <button class="btn-add" data-item="Tiramisú Clásico" data-price="7">+ Agregar</button>
             </div>
           </div>
         </article>
@@ -222,13 +213,13 @@
           <div class="menu-card-img" style="background-image: url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80')"></div>
           <div class="menu-card-body">
             <div class="menu-card-header">
-              <h3>Lava Cake de Chocolate</h3>
-              <span class="price">$16.500</span>
+              <h3>Lava Cake</h3>
+              <span class="price">$8</span>
             </div>
             <p>Coulant de chocolate amargo con centro líquido, acompañado de helado de vainilla</p>
             <div class="menu-card-footer">
               <span class="tag">Caliente</span>
-              <button class="btn-add" data-item="Lava Cake de Chocolate" data-price="16500">+ Agregar</button>
+              <button class="btn-add" data-item="Lava Cake de Chocolate" data-price="8">+ Agregar</button>
             </div>
           </div>
         </article>
@@ -237,29 +228,28 @@
           <div class="menu-card-img" style="background-image: url('https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80')"></div>
           <div class="menu-card-body">
             <div class="menu-card-header">
-              <h3>Cheesecake de Frutos Rojos</h3>
-              <span class="price">$15.000</span>
+              <h3>Cheesecake</h3>
+              <span class="price">$7</span>
             </div>
             <p>Cheesecake cremoso sobre base de galleta con coulis de frutos rojos frescos</p>
             <div class="menu-card-footer">
               <span class="tag">Frío</span>
-              <button class="btn-add" data-item="Cheesecake de Frutos Rojos" data-price="15000">+ Agregar</button>
+              <button class="btn-add" data-item="Cheesecake de Frutos Rojos" data-price="7">+ Agregar</button>
             </div>
           </div>
         </article>
 
-        <!-- Bebidas -->
         <article class="menu-card" data-category="bebidas">
           <div class="menu-card-img" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80')"></div>
           <div class="menu-card-body">
             <div class="menu-card-header">
               <h3>Café de Especialidad</h3>
-              <span class="price">$8.500</span>
+              <span class="price">$3</span>
             </div>
             <p>Café de origen colombiano preparado en V60, chemex o espresso según tu preferencia</p>
             <div class="menu-card-footer">
               <span class="tag">Caliente / Frío</span>
-              <button class="btn-add" data-item="Café de Especialidad" data-price="8500">+ Agregar</button>
+              <button class="btn-add" data-item="Café de Especialidad" data-price="3">+ Agregar</button>
             </div>
           </div>
         </article>
@@ -269,12 +259,12 @@
           <div class="menu-card-body">
             <div class="menu-card-header">
               <h3>Limonada de Coco</h3>
-              <span class="price">$9.000</span>
+              <span class="price">$4</span>
             </div>
             <p>Limonada natural con leche de coco, menta fresca y hielo granizado</p>
             <div class="menu-card-footer">
               <span class="tag">Refrescante</span>
-              <button class="btn-add" data-item="Limonada de Coco" data-price="9000">+ Agregar</button>
+              <button class="btn-add" data-item="Limonada de Coco" data-price="4">+ Agregar</button>
             </div>
           </div>
         </article>
@@ -284,12 +274,12 @@
           <div class="menu-card-body">
             <div class="menu-card-header">
               <h3>Copa de Vino</h3>
-              <span class="price">$22.000</span>
+              <span class="price">$8</span>
             </div>
             <p>Selección de vinos tintos y blancos de la región, maridaje perfecto para cada plato</p>
             <div class="menu-card-footer">
               <span class="tag">Tinto / Blanco</span>
-              <button class="btn-add" data-item="Copa de Vino" data-price="22000">+ Agregar</button>
+              <button class="btn-add" data-item="Copa de Vino" data-price="8">+ Agregar</button>
             </div>
           </div>
         </article>
@@ -298,7 +288,6 @@
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
   <section class="section section-alt" id="nosotros">
     <div class="section-inner about-grid">
       <div class="about-img-wrap">
@@ -344,7 +333,6 @@
     </div>
   </section>
 
-  <!-- ===== GALLERY ===== -->
   <section class="section" id="galeria">
     <div class="section-inner">
       <p class="section-label">Nuestros momentos</p>
@@ -360,7 +348,6 @@
     </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
   <section class="section section-alt" id="contacto">
     <div class="section-inner contact-grid">
       <div class="contact-info">
@@ -398,44 +385,42 @@
           </li>
         </ul>
         <div class="social-links">
-          <a href="#" class="social-btn" aria-label="Instagram">
+          <a href="https://www.instagram.com/andresch.15?igsh=dmMxdzE3MWZuZmF2" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
             Instagram
           </a>
-          <a href="https://www.instagram.com/andresch.15?igsh=dmMxdzE3MWZuZmF2" class="social-btn" aria-label="Facebook">
+          <a href="#" class="social-btn" aria-label="Facebook">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             Facebook
           </a>
           <a href="https://wa.me/584124328899" class="social-btn social-btn--whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-            WhatsApp
+                        WhatsApp
           </a>
         </div>
       </div>
       <div class="map-wrap">
         <iframe
-          title="Ubicación Estefana Bistro"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0697%2C4.6226%2C-74.0497%2C4.6426&layer=mapnik&marker=4.6326%2C-74.0597"
-          width="100%"
-          height="100%"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
+            title="Ubicación Estefana Bistro"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-68.0500%2C10.1500%2C-67.9500%2C10.2500&layer=mapnik&marker=10.2000%2C-68.0000"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
         ></iframe>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer-inner">
       <a href="#home" class="logo">Estefana<span>Bistro</span></a>
       <p>© <span id="year"></span> Estefana Bistro · Todos los derechos reservados</p>
-      <p class="footer-love">Hecho con ❤️ en Bogotá, Colombia</p>
+      <p class="footer-love">Hecho con ❤️ en Valencia, Venezuela</p>
     </div>
   </footer>
 
-  <!-- ===== FLOATING WHATSAPP ===== -->
   <a
     href="https://wa.me/584124328899?text=Hola%2C%20quiero%20hacer%20un%20pedido"
     class="whatsapp-fab"
@@ -446,7 +431,6 @@
     <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
   </a>
 
-  <!-- ===== CART SIDEBAR ===== -->
   <div class="cart-overlay" id="cart-overlay"></div>
   <aside class="cart-sidebar" id="cart-sidebar">
     <div class="cart-header">
@@ -465,7 +449,6 @@
     </div>
   </aside>
 
-  <!-- ===== CART BUTTON ===== -->
   <button class="cart-btn hidden" id="cart-btn" aria-label="Ver carrito">
     🛒 <span id="cart-count">0</span>
   </button>

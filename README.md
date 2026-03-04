@@ -23,3 +23,15 @@ Después de unos segundos, la página estará disponible en:
 
 ### registro-usuarios
 Formulario de registro e inicio de sesión con validación en tiempo real, hash de contraseñas (SHA-256) y persistencia en `localStorage`.
+
+### estefana-bistro
+Página web de menú digital para restaurante/bistro, similar a los sitios generados por la plataforma Flavoo. Incluye:
+- **Hero** con fondo fotográfico, nombre del restaurante y botón de WhatsApp
+- **Barra de información** con horario, ubicación, domicilio y calificación
+- **Menú digital** con categorías filtrables (Entradas, Principales, Postres, Bebidas) y precios
+- **Carrito de pedido** deslizante con generación automática de mensaje de WhatsApp
+- **Sección Nosotros** con historia y valores del bistro
+- **Galería** fotográfica
+- **Sección de Contacto** con mapa integrado y redes sociales
+- **Botón flotante de WhatsApp** siempre visible
+- Diseño **mobile-first** y completamente responsivo

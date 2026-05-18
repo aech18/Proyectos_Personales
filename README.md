@@ -2,13 +2,13 @@
 
 ## 🌐 Ver en la web
 
-El proyecto **Registro y Validación de Usuarios** está publicado en GitHub Pages:
+El proyecto **wc2026-shop** está publicado en GitHub Pages:
 
 👉 **https://aech18.github.io/Proyectos_Personales/**
 
 ## 🚀 Cómo funciona el despliegue
 
-Este repositorio usa **GitHub Actions** para publicar automáticamente la carpeta `registro-usuarios/` en GitHub Pages cada vez que se hace un push a la rama `main`.
+Este repositorio usa **GitHub Actions** para publicar automáticamente la carpeta `wc2026-shop/` en GitHub Pages cada vez que se hace un push a la rama `main`.
 
 ### Pasos para activarlo (una sola vez)
 
@@ -20,6 +20,9 @@ Después de unos segundos, la página estará disponible en:
 `https://<tu-usuario>.github.io/<nombre-del-repo>/`
 
 ## 📁 Proyectos
+
+### wc2026-shop
+Tienda temática del Mundial 2026 con catálogo de camisetas, carrito y finalización de compra por WhatsApp.
 
 ### registro-usuarios
 Formulario de registro e inicio de sesión con validación en tiempo real, hash de contraseñas (SHA-256) y persistencia en `localStorage`.

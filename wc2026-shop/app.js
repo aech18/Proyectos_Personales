@@ -13,6 +13,7 @@ const addButtons = Array.from(document.querySelectorAll("button")).filter((btn) 
 
 const headerCartBadge = document.querySelector("header .relative span.absolute");
 const headerCartButton = document.querySelector("header .relative");
+const headerCartIcon = document.querySelector("header .relative .material-symbols-outlined");
 const aside = document.querySelector("aside");
 const cartItemsContainer = aside?.querySelector(
   ".flex-1.overflow-y-auto.p-md.space-y-md.divide-y.divide-surface-variant"
@@ -93,6 +94,7 @@ function createMobileCart() {
 
 function openMobileCart() {
   createMobileCart();
+  updateCartUI();
   if (!mobileCartDrawer || !mobileCartOverlay) return;
   mobileCartOverlay.style.display = "block";
   mobileCartDrawer.style.transform = "translateY(0)";
@@ -142,6 +144,17 @@ function handleCheckout() {
     "https://wa.me/584124328899?text=" + encodeURIComponent(message),
     "_blank"
   );
+}
+
+function bindCartOpen(el) {
+  if (!el) return;
+  const openHandler = () => {
+    if (window.innerWidth < 1280) {
+      openMobileCart();
+    }
+  };
+  el.addEventListener("click", openHandler);
+  el.addEventListener("touchstart", openHandler, { passive: true });
 }
 
 // Agregar al carrito
@@ -219,11 +232,8 @@ cartItemsContainer?.addEventListener("click", handleQtyClick);
 whatsappBtn?.addEventListener("click", handleCheckout);
 
 // Abrir carrito en mobile al tocar el icono
-headerCartButton?.addEventListener("click", () => {
-  if (window.innerWidth < 1280) {
-    openMobileCart();
-  }
-});
+bindCartOpen(headerCartButton);
+bindCartOpen(headerCartIcon);
 
 // Inicializa UI
 updateCartUI();

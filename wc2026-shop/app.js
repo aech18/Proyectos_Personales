@@ -237,3 +237,28 @@ bindCartOpen(headerCartIcon);
 
 // Inicializa UI
 updateCartUI();
+
+window.addEventListener("load", () => {
+  if (!window.gsap || !window.ScrollTrigger) return;
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const STAGGER_DELAY = 0.06;
+  const catalogCards = Array.from(
+    new Set(addButtons.map((btn) => btn.closest("article")).filter(Boolean))
+  );
+
+  catalogCards.forEach((card, index) => {
+    gsap.from(card, {
+      opacity: 0,
+      y: 32,
+      duration: 0.6,
+      ease: "power2.out",
+      delay: index * STAGGER_DELAY,
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%"
+      }
+    });
+  });
+});

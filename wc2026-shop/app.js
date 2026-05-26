@@ -243,7 +243,10 @@ window.addEventListener("load", () => {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  const catalogCards = gsap.utils.toArray("main section:nth-of-type(2) article");
+  const STAGGER_DELAY = 0.06;
+  const catalogCards = Array.from(
+    new Set(addButtons.map((btn) => btn.closest("article")).filter(Boolean))
+  );
 
   catalogCards.forEach((card, index) => {
     gsap.from(card, {
@@ -251,7 +254,7 @@ window.addEventListener("load", () => {
       y: 32,
       duration: 0.6,
       ease: "power2.out",
-      delay: index * 0.06,
+      delay: index * STAGGER_DELAY,
       scrollTrigger: {
         trigger: card,
         start: "top 85%"

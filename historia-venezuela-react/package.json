@@ -1,6 +1,7 @@
 {
   "name": "historia-venezuela-react",
   "version": "1.0.0",
+  "homepage": "https://aech18.github.io/Proyectos_Personales/historia-venezuela-react",
   "description": "Historia de Venezuela en React siguiendo lineamientos de ECC",
   "dependencies": {
     "react": "^18.2.0",

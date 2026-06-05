@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Proyectos_Personales/historia-venezuela-react/static/css/main.9d7ccc68.css",
+    "main.js": "/Proyectos_Personales/historia-venezuela-react/static/js/main.780eb941.js",
+    "index.html": "/Proyectos_Personales/historia-venezuela-react/index.html",
+    "main.9d7ccc68.css.map": "/Proyectos_Personales/historia-venezuela-react/static/css/main.9d7ccc68.css.map",
+    "main.780eb941.js.map": "/Proyectos_Personales/historia-venezuela-react/static/js/main.780eb941.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d7ccc68.css",
+    "static/js/main.780eb941.js"
+  ]
+}

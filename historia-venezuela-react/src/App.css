@@ -1,0 +1,58 @@
+/* Variables (KISS, DRY - Evitando Magic Numbers / Hardcoded colors) */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+    --background-color: #f9f9f9;
+    --text-color: #333333;
+    --container-width: 800px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.app-header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.main-content {
+    max-width: var(--container-width);
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.history-section {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.history-section h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--background-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.app-footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 2rem;
+}
